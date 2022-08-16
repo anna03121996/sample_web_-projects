@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <script src="../JS/Index.js"></script>
+</head>
+<body>
+    <div id="form_validation">
+        <h1 >Form Validation Register</h1>
+        <div id="reg">
+            <br><br>
+
+            <fieldset style="background-image: url(../Static/Image/2ndmid.jpg);">
+
+                <legend>&nbsp;&nbsp;&nbsp;&nbsp; Register</legend><br>
+
+                <form>
+
+                    <div class="form">
+                        <div>
+                            <label>Full Name</label><br><br>
+                        <input type="text" id="name" maxlength="20"><br><br>
+    
+                        <label>Age</label><br><br>
+                        <input type="number" id="age"><br><br>
+    
+                        <label>Gender</label><br><br>
+                        <select id="gender"> 
+                            <option>select</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select><br><br>
+                        
+                        <label>Email Address</label><br><br>
+                        <input type="email" name="email" id="mail"><br><br>
+                        </div>
+    
+                        <div>
+                            <label>Mobile Number</label><br><br>
+                        <input maxlength="10" type="number" id="phno"><br><br>
+                    
+                        <label>Password</label><br><br>
+                        <input type="password" id="pw1"><br><br>
+                        
+                        <label>Confirm Password</label><br><br>
+                        <input type="password" id="pw2"><br><br><br>
+                        
+                        <button type="button" value="Submit" onclick="myFunction()">Submit</button>
+                        </div>
+                    </div>
+
+                </form>
+            </fieldset>
+            <br><br><br>
+            <h1 style="text-align: center;" id="demo"></h1>
+
+        </div>
+    </div>
+
+</body>
+</html>

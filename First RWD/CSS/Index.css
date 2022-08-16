@@ -1,0 +1,143 @@
+.fixed_head{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.brand_name>img{
+    height: 80px;
+    width: auto;
+    border-radius: 20px;
+}
+.login_sign_up{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.login_sign_up>a{
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+    color: gray;
+    margin: 5px 150px;
+}
+.sign_up{
+    border: 1px solid gray;
+}
+.sign_up:hover{
+    color: gray;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    border: 1px solid white;
+}
+.login:hover{
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.left{
+    padding-top: 100px;
+}
+.left_head>p{
+    text-align: center;
+    color: gray;
+    font-size: 30px;
+}
+.left_left_right{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.left_left_right>div{
+    padding-top: 150px;
+}
+p{
+    color: gray;
+}
+.empty{
+    width: 100px;
+}
+.right{
+    height: 500px;
+    width: 1000px;
+    border: none;
+}
+.empty_div{
+    display: none;
+}
+b{
+    color: wheat;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    text-align: left;
+ }
+@media screen and (max-width:800px) {
+    .fixed_head{
+        height: auto;
+        width: 100%;
+    }
+    .login_sign_up>a{
+        height: 30px;
+        width: 100px;
+        margin: 5px 20px;
+    }
+    .brand_name>img{
+        margin-top: 40px;
+        height: 30px;
+        width: 100%;
+    }
+    .content{
+        display: block;
+        justify-content: center;
+    }
+    .left_left_right{
+        display: block;
+        justify-content: center;
+    }
+    .sign_up{
+        border: none;
+        width: 100%;
+    }
+    .right{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: 300px;
+        width: 400px;
+    }
+}
+/* -- sign up and login -- */
+.sign_and_log{
+    text-align: center;
+    background-color: whitesmoke;
+}
+form{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+input{
+    text-align: center;
+    height: 30px;
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+input:focus{
+    border: 3px solid wheat;
+}
+.sign_and_log a{
+    text-decoration: none;
+    color: gray;
+    height: 30px;
+    width: 80px;
+}

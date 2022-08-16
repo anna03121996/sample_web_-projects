@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 500px;
+            width: 100%;
+            margin-top: 100px;
+        }
+        .top{
+            display: flex;
+            justify-content: center;
+        }
+        @keyframes blades {
+            0%{
+                transform: translate(0px,0px);
+            }
+            50%{
+                transform: translate(0px,300px) rotate(360deg);
+            }
+            75%{
+                transform: translate(0px,200px) rotate(180deg);
+            }
+            100%{
+                transform: translate(0px,400px) rotate(360deg);
+            }
+        }
+        .top>img{
+            filter: drop-shadow(0 0 20px orange);
+            box-shadow: 0,0,20px ;
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            animation-duration: 2s;
+            animation-name: blades;
+            animation-iteration-count: infinite;
+        }
+        .blade1{
+            animation-delay: 0s;
+        }.blade2{
+            animation-delay: 1s;
+            animation-direction: reverse;
+        }.blade3{
+            animation-delay: 2s;
+        }.blade4{
+            animation-delay: 3s;
+            animation-direction: reverse;
+        }.blade5{
+            animation-delay: 4s;
+        }
+        /* .blade6{
+            animation-delay: 5s;
+            animation-direction: reverse;
+        }.blade7{
+            animation-delay: 6s;
+        }.blade8{
+            animation-delay: 7s;
+            animation-direction: reverse;
+        }.blade9{
+            animation-delay: 8s;
+        } */
+    </style>
+</head>
+<body>
+    <h1 style="color: aliceblue;">Ninja Blade Dance</h1>
+    <center>
+        <div class="box">
+            <div class="top">
+                <img class="blade1" src="../IMAGE/ninja_blade.png">
+                <img class="blade2" src="../IMAGE/ninja_blade.png">
+                <img class="blade3" src="../IMAGE/ninja_blade.png">
+                <img class="blade4" src="../IMAGE/ninja_blade.png">
+                <img class="blade5" src="../IMAGE/ninja_blade.png">
+                <!-- <img class="blade6" src="../IMAGE/ninja_blade.png">
+                <img class="blade7" src="../IMAGE/ninja_blade.png">
+                <img class="blade8" src="../IMAGE/ninja_blade.png">
+                <img class="blade9" src="../IMAGE/ninja_blade.png"> -->
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </center>
+</body>
+</html>

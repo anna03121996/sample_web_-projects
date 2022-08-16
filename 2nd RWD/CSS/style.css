@@ -1,0 +1,132 @@
+#top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#top>p{
+    font-size: 40px;
+}
+#top>input{
+    font-size: 30px;
+    border:none;
+    background-color: rgb(117, 238, 141);
+    font-family: 'Times New Roman', Times, serif;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+}
+.gapDiv{
+    opacity: 52%;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+.gapDiv>h4{
+    padding-top: 5px;
+}
+.subDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#farm{
+    background-image: url("../MEDIA/farmBg.webp");
+}
+#veg{
+    background-image: url("../MEDIA/vegBg.jpg");
+}
+#fru{
+    background-image: url("../MEDIA/fruitsBg.jpg");
+}
+#flo{
+    background-image: url("../MEDIA/flowersBg.jpg");
+}
+#spi{
+    background-image: url("../MEDIA/indianSpices.jpg");
+}
+#root{
+    background-image: url("../MEDIA/RootsBg.jpg") ;
+}
+#nuts{
+    background-image: url("../MEDIA/nutsPlant.jpg");
+}
+.subDivImg{
+    border: 50px solid rgba(245, 245, 245, 0.389);
+    height: auto;
+    width: 500px;
+}
+.subDiv>div{
+    height: auto;
+    width: 400px;
+    color: aliceblue;
+}
+.subDiv>div>p{
+    font-weight: 100;
+    font-size: 20px;
+}
+#bottom{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+#bottom>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#bottom>div>a>img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+@media screen and(min-width:"1200px") {
+    .subDiv{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    .subDivImg{
+        height: 200px;
+        width: 400px;
+    }
+    .subDiv>div{
+        height: 200px;
+        width: 400px;
+    }
+}
+
+/*                         shop                               */
+
+.products{
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.products>img{
+    height: 200px;
+    width: auto;
+}
+input{
+    height: 80px;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: greenyellow;
+    border-radius: 30px;
+    border: none;
+}
+.products h3{
+    text-transform: capitalize;
+}
+.products:nth-child(even){
+    background-color: rgb(36, 210, 36);
+}

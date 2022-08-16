@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        @keyframes animate {
+            0%{
+                transform: translate(0);
+            }
+            25%{
+                transform: translateY(500px);
+                animation-duration: 2s;
+            }
+            50%{
+                transform: translate(0);
+            }
+            75%{
+                transform: translateY(-500px);
+                animation-duration: 2s;
+            }
+            100%{
+                transform: translate(0);
+                animation-duration: 2s;
+            }
+        }
+        .box{
+            margin: 30%;
+            transform: rotateX(100deg);
+        }
+        .circle{
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .circle1{
+            height: 400px;
+            width: 400px;
+            border: 20px solid red;
+            box-shadow: 0 0 50px red,
+            inset 0 0 50px red;
+            border-radius: 50%;
+            /* animation-delay: .5s; */
+        }
+        .circle2{
+            margin-top: 25px;
+            height: 300px;
+            width: 300px;
+            border: 20px solid green;
+            box-shadow: 0 0 50px green,
+            inset 0 0 50px green;
+            border-radius: 50%;
+            /* animation-delay: 1s; */
+        }
+        .circle3{
+            margin-top: 25px;
+            height: 200px;
+            width: 200px;
+            border: 20px solid blue;
+            box-shadow: 0 0 50px blue,
+            inset 0 0 50px blue;
+            border-radius: 50%;
+            /* animation-delay: 1.5s; */
+        }
+        .circle4{
+            margin-top: 25px;
+            height: 100px;
+            width: 100px;
+            border: 20px solid orange;
+            box-shadow: 0 0 50px orange,
+            inset 0 0 50px orange;
+            border-radius: 50%;
+            /* animation-delay: 2s; */
+        }
+        /* div{
+            height: 600px;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @keyframes cactus_plant{
+            0%{
+                transform: translate(0,0);
+            }
+            50%{
+                transform: translate(-250px,0);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        @keyframes ball_jump{
+           0%{
+                transform: translate(0,0);
+            }
+            50%{
+                transform: translate(0,-250px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+}
+        .cactus{
+            margin-top: 500px;
+            height: 100px;
+            width: 100px;
+            animation-name: cactus_plant;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .ball{
+            margin-top: 550px;
+            margin-left: 100px;
+            height: 50px;
+            width: 50px;
+            animation-name: ball_jump;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        } */
+    </style>
+</head>
+<body>
+    <h1 style="color: aliceblue;">Drop Wave</h1>
+    <!-- <center>
+        <div>
+            <img class="ball" src="../IMAGE/basketball.png" alt="">
+            <img class="cactus" src="../IMAGE/cactus.webp" alt="">
+        </div>
+    </center> -->
+    <center>
+        <div class="box">
+            <div class="circle circle1">
+                <div class="circle circle2">
+                    <div class="circle circle3">
+                        <div class="circle circle4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

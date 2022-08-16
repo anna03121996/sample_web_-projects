@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin-top: 200px;
+            height: auto;
+            width: 500px;
+            border-bottom: 3px solid rgb(233, 219, 25);
+            display: flex;
+        }
+        img{
+            height: 100px;
+            width: auto;
+        }
+
+        @keyframes road_runner_and_fox {
+            1%{
+                animation-delay: 1s;
+                transform: translate(0,0);
+            }
+            50%{
+                transform: translate(300px);
+            }
+            100%{
+                filter: opacity(0%);
+            }
+        }
+        @keyframes road_runner {
+            1%{
+                filter: opacity(0%);
+            }
+            100%{
+                filter: opacity(100%);
+                animation-duration: 3s;
+            }
+        }
+        @keyframes fox {
+            1%{
+                filter: opacity(0%);
+            }
+            100%{
+                filter: opacity(100%);
+                animation-duration: 3s;
+                transform: translate(0px,300px);
+            }
+        }
+        #road_runner_and_fox{
+            animation-name: road_runner_and_fox;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+        }
+        #road_runner{
+            filter: opacity(0%);
+            animation-name: road_runner;
+            animation-delay: 4s;
+            animation-duration: 4s;
+            margin-left: 250px;
+        }
+        #help{
+            filter: opacity(0%);
+            animation-name: fox;
+            animation-delay: 4s;
+            animation-duration: 3s;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Road Runner</h1></center>
+   <center>
+    <div class="box">
+        <img id="road_runner_and_fox" src="../IMAGE/road_runner_and_fox.png">
+        <img id="road_runner" src="../IMAGE/road_runner.png">
+        <!-- <img id="fox" src="../IMAGE/fox.jpeg"> -->
+        <img id="help" src="../IMAGE/fox_asking_help.png">
+    </div>
+   </center>
+</body>
+</html>

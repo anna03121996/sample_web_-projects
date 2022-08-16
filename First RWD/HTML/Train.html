@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .main_box{
+            position: relative;
+            height: 800px;
+            width: 800px;
+            border: 2px solid black;
+        }
+        @keyframes square {
+            
+            /* 0%{
+                transform: translate(0,0);
+            } */
+            100%{
+                transform: translate(0,300px) rotate(360deg) scale(0.5);
+                animation-delay: 3s;
+            }
+        }
+        @keyframes diamond {
+            /* 0%{
+                transform: translate(0,0);
+            } */
+            100%{
+                animation-delay: 3s;
+                transform: translate(0,-283px) rotate(235deg) scale(0.5); 
+            }
+        }
+        @keyframes circle {
+            /* 0%{
+                transform: translate(0,0);
+            } */
+            100%{
+                transform: translate(-315px,0) rotate(360deg) scale(0.5);
+            }
+        }
+        @keyframes triangle {
+            0%{
+                transform: translate(0,0);
+            }
+            100%{
+                transform: translate(350px,0) rotate(360deg) scale(0.5);
+                }
+        }
+        .square{
+            position: absolute;
+            top: 0;
+            left: 300px;
+            height: 215px;
+            width: 215px;
+            border: 2px solid gray;
+            box-shadow: inset 0 0 5px gray,
+            0 0 5px gray;
+            background-color: rgba(0, 0, 0, 0);
+            /* transform: translate(0,300px); */
+            animation-name: square;
+            animation-delay: 6s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        .diamond{
+            position: absolute;
+            left: 333px;
+            top: 615px;
+            height: 150px;
+            width: 150px;
+            border: 2px solid gray;
+            box-shadow: inset 0 0 5px gray,
+            0 0 5px gray;
+            background-color: rgba(0, 0, 0, 0);
+            /* transform: translate(0,-283px) rotate(45deg); */
+            animation-name: diamond;
+            animation-delay: 4s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        .circle{
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            left: 648px;
+            top: 333px;
+            border: 2px solid gray;
+            box-shadow: inset 0 0 5px gray,
+            0 0 5px gray;
+            background-color: rgba(0, 0, 0, 0);
+            /* transform: translate(-315px,0); */
+            animation-name: circle;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        .triangle{
+            position: absolute;
+            left: 0px;
+            top: 340px;
+            width: 0;
+	        height: 0;
+	        border-left: 60px solid transparent;
+	        border-right: 60px solid transparent;
+	        border-bottom: 120px solid gray;
+            /* transform: translate(350px,0); */
+            animation-name: triangle;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_box">
+        <div class="square"></div>
+        <div class="diamond"></div>
+        <div class="circle"></div>
+        <div class="triangle"></div>
+    </div>
+</body>
+</html>

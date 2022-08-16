@@ -1,0 +1,365 @@
+.fixed_head_nav_bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+.head{
+    display: flex;
+}
+.login_btn{
+    background-color: black;
+    border: 0px;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 30px;
+    color: dimgrey;
+    font-size: 20px;
+}
+.login_btn:hover{
+    background-color: gray;
+    border-radius: 5px;
+}
+#logo{
+    padding-top: 30px;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+a{
+    width: 150px;
+}
+a,p{
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: dimgrey;
+    text-align: center;
+}
+ul li{
+    list-style-type: none;
+    height: 30px;
+    width: 150px;
+}
+.nav_bar,a{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+a:hover{
+    color: orange;
+}
+.service_dropdown{
+    display: none;
+}
+.nav_bar li:nth-child(2):hover .service_dropdown{
+    display: block;
+}
+.service_dropdown li a{
+    margin-left: -40px;
+    margin-top: 0px;
+}
+.welcome{
+    margin-top: 200px;
+    text-align: center;
+}
+@keyframes colors {
+    10%{
+        background-image: linear-gradient(orange, yellow);
+        transition-duration: 4s;
+    }
+    25%{
+        color: gray;
+        transition-duration: 4s;
+    }
+    40%{
+        background-image: radial-gradient(orange, yellow);
+        transition-duration: 4s;
+    }
+    50%{
+        color:aqua;
+        transition-duration: 4s;
+    }
+    60%{
+        background-image: linear-gradient(rgb(135, 241, 86), rgb(116, 225, 240));
+        transition-duration: 4s;
+    }
+    75%{
+        color:gray;
+        transition-duration: 4s;
+    }
+    90%{
+        background-image: radial-gradient(rgb(238, 125, 248), rgb(248, 131, 156));
+        transition-duration: 4s;
+    }
+    100%{
+        color: aqua;
+        transition-duration: 4s;
+    }
+}
+.our_work{
+    padding-top: 150px;
+    height: 500px;
+    width: 100%;
+    overflow-x: hidden;
+    animation-name: colors;
+    animation-duration: 20s;
+    background-size: cover;
+    animation-iteration-count: infinite;
+    background-image: linear-gradient(rgb(122, 206, 245),rgb(250, 106, 95));
+}
+.content_bar{
+    display: flex;
+    justify-content: space-around;
+    /* border: 3px solid gray;
+    border-radius: 10px; */
+}
+.work_service{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+.work_service h4{
+    padding-top: 130px;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    border: 5px solid orange;
+    border-radius: 10px;
+    background-size: cover;
+    font-size: 20px;
+    font-weight: bolder;
+    color: darkgoldenrod;
+
+}
+.work_service h4:hover{
+    font-size: 30px;
+}
+.work{
+    height: 150px;
+    width: 400px;
+}
+.content_bar h1{
+    padding-top: 70px;
+}
+#content_bar_1, #content_bar_3, #content_bar_5{
+    background-color: black;
+    color: white;
+}
+/* .content_image{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-size:cover;
+} */
+.emp{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.emp h1{
+    margin-top: 30px;
+}
+.emp img{
+    height: 100px;
+    width: 100px;
+}
+.customers h1{
+    text-align: center;
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.footer_top{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_top h3{
+    text-align: center;
+    margin-top: 50px;
+}
+.footer_top p{
+    margin-top: 30px;
+    width: 100px;
+}
+.footer_bottom p{
+    margin-top: 50px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.row img{
+    height: 80px;
+    width: 80px;
+    margin: 100px;
+}
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.foot_social{
+    display: flex;
+    justify-content: center;
+}
+.foot_social img{
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+}
+/* basket ball */
+/* basket ball task */
+#ball{
+    height: 100px;
+    width: 100px;
+    margin-left: 600px;
+    margin-top: 500px;
+}
+#basket{
+    height: 200px;
+    width: 200px;
+    margin-left: 550px;
+    margin-top: 100px;
+}
+#ball:hover{
+    transform: translate(0px,-600px) rotate(340deg) scale(.7);
+    transition-duration: 5s;
+}
+/*Form Validation*/
+#reg fieldset {
+    border: 3px solid greenyellow; 
+    border-radius: 10px;
+    background-color: rgba(255, 228, 196, 0.486);
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: left;
+    color: blueviolet;
+    font-weight: bolder;
+  
+  }
+  
+  #reg fieldset legend{
+    height: 30px;
+    width: 100px;
+    border: 3px solid rgb(0, 255, 21);
+    border-radius: 3px;
+    background-color: white;
+    padding-top: 8px;
+  }
+  #reg fieldset form input, select, button, option{
+    height: 30px;
+    width: 200px;
+    border: 3px solid yellowgreen;
+    border-radius: 5px;
+  }
+  #reg fieldset form button{
+    color: yellow;
+    background-color: royalblue;
+    font-weight: bold;
+  }
+  .form{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #reg{
+    height: fit-content;
+  }
+  fieldset{
+    padding-top: 50px;
+  }
+
+  input:focus{
+      border: 3px solid orange;
+      border-radius: 5px;
+  }
+  /* Link 2 */
+  #game_box{
+      height: 700px;
+      width: 100%;
+      border-bottom: 3px solid gray;
+  }
+  @keyframes game_box_head{
+      0%{
+          background-color: orange;
+      }
+      25%{
+          background-color: yellowgreen;
+      }
+      50%{
+          background-color: gold;
+      }
+      75%{
+          background-color: palegoldenrod;
+      }
+      100%{
+          background-color: hotpink;
+      }
+  }
+  #game_box h1{
+      margin: 20px 20px 20px  20px;
+      text-align: center;
+      border-radius: 10px;
+      animation-name: game_box_head;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+  }
+  @keyframes cactus_plant{
+      0%{
+          transform: translate(0,0);
+      }
+      50%{
+          transform: translate(2000px,0);
+      }
+      100%{
+          transform: translate(-2000px,0);
+      }
+  }
+  .cactus{
+    padding-left: 100px;
+    padding-top: 600px;
+    height: 80px;
+    animation-name: cactus_plant;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes ball_jump{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,-200px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+#game_ball{
+    height: 50px;
+    width: auto;
+    padding-left: 500px;
+}
+#game_ball:hover{
+    animation-name: ball_jump;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+#cactus1{
+    padding-left: 100px;
+}
+/* #cactus2{
+    padding-left: 200px;
+}
+#cactus3{
+    padding-left: 300px;
+}
+#cactus4{
+    padding-left: 300px;
+}
+#cactus5{
+    padding-left: 300px;
+} */
